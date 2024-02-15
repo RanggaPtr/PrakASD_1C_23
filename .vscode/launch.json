@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "tugas2",
+            "request": "launch",
+            "mainClass": "P1.tugas2",
+            "projectName": "PROGRAM_8f7ca7e8"
+        },
+        {
+            "type": "java",
+            "name": "tugas1",
+            "request": "launch",
+            "mainClass": "P1.tugas1",
+            "projectName": "PROGRAM_8f7ca7e8"
+        },
+        {
+            "type": "java",
+            "name": "array",
+            "request": "launch",
+            "mainClass": "P1.array",
+            "projectName": "PROGRAM_8f7ca7e8"
+        },
+        {
+            "type": "java",
             "name": "perulangan",
             "request": "launch",
             "mainClass": "P1.perulangan",
