@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "nilaiAkhirMahasiswa23",
+            "request": "launch",
+            "mainClass": "P1.nilaiAkhirMahasiswa23",
+            "projectName": "PROGRAM_8f7ca7e8"
+        },
+        {
+            "type": "java",
+            "name": "nilaiAkhirMahasiswa",
+            "request": "launch",
+            "mainClass": "P1.nilaiAkhirMahasiswa",
+            "projectName": "PROGRAM_8f7ca7e8"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
