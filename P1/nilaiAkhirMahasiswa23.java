@@ -36,7 +36,7 @@ public class nilaiAkhirMahasiswa23 {
         System.out.println("============================================");
         double nilaiAkhir = 0.2 * nilaiTugas + 0.2 * nilaiKuis + 0.3 * nilaiUTS + 0.3 * nilaiUAS;
         System.out.println("Nilai Akhir: " + nilaiAkhir);
-        
+
         String nilaiHuruf;
         if (nilaiAkhir >= 80 && nilaiAkhir <= 100) {
             nilaiHuruf = "A";
@@ -53,9 +53,9 @@ public class nilaiAkhirMahasiswa23 {
         } else {
             nilaiHuruf = "E";
         }
-        
+
         System.out.println("Nilai Huruf: " + nilaiHuruf);
-        
+
         if (nilaiHuruf.equals("A") || nilaiHuruf.equals("B+") || nilaiHuruf.equals("B") || nilaiHuruf.equals("C+")) {
             System.out.println("LULUS");
         } else {

@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "perulangan",
+            "request": "launch",
+            "mainClass": "P1.perulangan",
+            "projectName": "PROGRAM_8f7ca7e8"
+        },
+        {
+            "type": "java",
             "name": "nilaiAkhirMahasiswa23",
             "request": "launch",
             "mainClass": "P1.nilaiAkhirMahasiswa23",
