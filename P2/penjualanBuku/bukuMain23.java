@@ -12,10 +12,16 @@ public class bukuMain23 {
         bk1.gantiHarga(60000);
         bk1.tampilInformasi();
 
-        // bukuu23 bk2 = new bukuu23();
+        System.out.println("=============================================");
 
-        // bk2.judul = "How To train Your Dragon";
-        // bk2.pen
+        bukuu23 bk2 = new bukuu23();
+
+        bk2.judul = "How To train Your Dragon";
+        bk2.pengarang = "Cressida Cowwel";
+        bk2.halaman = 432;
+        bk2.stok = 0;
+        bk2.harga = 275000;
+        bk2.tampilInformasi();
 
     
     }
