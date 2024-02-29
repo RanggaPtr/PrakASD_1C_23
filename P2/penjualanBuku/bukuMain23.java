@@ -24,7 +24,7 @@ public class bukuMain23 {
         // bk2.tampilInformasi();
         // System.out.println("Setelah pengurangan stock");
         bukuu23 bk2 = new bukuu23("Self Reward","maheera ayesha",160,29,59000);
-        bk2.terjual(11);
+        bk2.terjual(30);
         bk2.tampilInformasi();
 
     

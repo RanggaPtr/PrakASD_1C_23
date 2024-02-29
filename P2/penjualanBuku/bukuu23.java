@@ -12,8 +12,9 @@ public class bukuu23 {
     }
         
     void terjual(int jml) {
-        if (stok>0) {
-            stok -= jml;
+        stok -= jml;
+        if (stok<0) {
+            System.out.println("Stock yang tersedia kurang");
         }
     }
 
@@ -27,9 +28,9 @@ public class bukuu23 {
 
     
 
-    // public bukuu23(){
+    public bukuu23(){
 
-    // }
+    }
 
     public bukuu23(String jud,String pg,int hal,int stok,int har){
         judul =jud;
