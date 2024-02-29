@@ -27,9 +27,9 @@ public class bukuu23 {
 
     
 
-    public bukuu23(){
+    // public bukuu23(){
 
-    }
+    // }
 
     public bukuu23(String jud,String pg,int hal,int stok,int har){
         judul =jud;
