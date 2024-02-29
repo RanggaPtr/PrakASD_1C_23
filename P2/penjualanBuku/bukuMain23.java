@@ -12,10 +12,9 @@ public class bukuMain23 {
         bk1.gantiHarga(60000);
         bk1.tampilInformasi();
 
-        System.out.println("=============================================");
-
+        
         // bukuu23 bk2 = new bukuu23();
-
+        
         // bk2.judul = "How To train Your Dragon";
         // bk2.pengarang = "Cressida Cowwel";
         // bk2.halaman = 432;
@@ -23,10 +22,14 @@ public class bukuMain23 {
         // bk2.harga = 275000;
         // bk2.tampilInformasi();
         // System.out.println("Setelah pengurangan stock");
+        
+        System.out.println("=============================================");
         bukuu23 bk2 = new bukuu23("Self Reward","maheera ayesha",160,29,59000);
-        bk2.terjual(30);
+        bk2.terjual(8);
         bk2.tampilInformasi();
 
-    
+        System.out.println("================================================");
+        bukuu23 bukuRangga = new bukuu23("How to learning java","rangga putra",190,90,59000);
+        bukuRangga.tampilInformasi();
     }
 }
