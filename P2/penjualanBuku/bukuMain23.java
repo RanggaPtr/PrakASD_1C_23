@@ -30,8 +30,8 @@ public class bukuMain23 {
         System.out.println("===============================================");
         bukuu23 bukuRangga = new bukuu23("How to learning java", "rangga putra", 190, 90, 59000);
         bukuRangga.tampilInformasi();
-        System.out.println("Harga Total "+ bukuRangga.hitungHargaTotal(9));
-        System.out.println("Total Diskon "+ bukuRangga.hitungDiskon(9));
-        System.out.println("Harga Bayar "+ bukuRangga.hitungHargaBayar(9));
+        System.out.println("Harga Total " + bukuRangga.hitungHargaTotal(9));
+        System.out.println("Total Diskon " + bukuRangga.hitungDiskon(9));
+        System.out.println("Harga Bayar " + bukuRangga.hitungHargaBayar(9));
     }
 }
