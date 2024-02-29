@@ -2,12 +2,11 @@ package dragonGame;
 
 public class Dragon {
     int x, y, width, height;
-
-    public static void main(String[] args) {
+public static void main(String[] args) {
         
-        Dragon dragon = new Dragon();
-        dragon.x = 9;
-        dragon.y = 3;
+        Dragon drago
+
+            on.y = 3;
         dragon.width = 10;
         dragon.height = 8;
 
@@ -28,7 +27,6 @@ public class Dragon {
         System.out.println("POSISI AKHIR : ");
         dragon.printPosition();
     }
-
     void moveLeft() {
         if (x > 0) {
             
