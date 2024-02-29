@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Dragon",
+            "request": "launch",
+            "mainClass": "dragonGame.Dragon",
+            "projectName": "PROGRAM_8f7ca7e8"
+        },
+        {
+            "type": "java",
+            "name": "mainDragon",
+            "request": "launch",
+            "mainClass": "dragonGame.mainDragon",
+            "projectName": "PROGRAM_8f7ca7e8"
+        },
+        {
+            "type": "java",
             "name": "bukuMain23",
             "request": "launch",
             "mainClass": "bukuMain23",
