@@ -44,6 +44,7 @@ public class array {
                     break;
                 }
             }
+            // setor data
             nilaiHuruf[i] = huruf[indexHuruf];
             nilaiSetara[i] = setara[indexHuruf];
         }
@@ -57,6 +58,7 @@ public class array {
             System.out.printf("%-40s%-14d%-14s%-14.2f\n", matkul[i], nilai[i], nilaiHuruf[i], nilaiSetara[i]);
         }
 
+        // totalan
         int totalSks = 0;
         double totalNilai = 0;
         for (int i = 0; i < matkul.length; i++) {
