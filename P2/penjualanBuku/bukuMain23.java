@@ -22,6 +22,9 @@ public class bukuMain23 {
         bk2.stok = 0;
         bk2.harga = 275000;
         bk2.tampilInformasi();
+        bk2.terjual(4);
+        System.out.println("Setelah pengurangan stock");
+        bk2.tampilInformasi();
 
     
     }
