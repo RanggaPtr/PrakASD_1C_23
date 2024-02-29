@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "bukuMain23",
+            "request": "launch",
+            "mainClass": "bukuMain23",
+            "projectName": "PROGRAM_8f7ca7e8"
+        },
+        {
+            "type": "java",
             "name": "royalGarden",
             "request": "launch",
             "mainClass": "P1.royalGarden",
