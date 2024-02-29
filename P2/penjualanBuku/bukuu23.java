@@ -21,10 +21,21 @@ public class bukuu23 {
         stok += jml;
     }
 
-    void gantiHarga(int hrg){
-        harga=hrg;
+    void gantiHarga(int hrg) {
+        harga = hrg;
     }
 
-
     
+
+    public bukuu23(){
+
+    }
+
+    public bukuu23(String jud,String pg,int hal,int stok,int har){
+        judul =jud;
+        pengarang=pg;
+        halaman=hal;
+        this.stok=stok;
+        harga=har;
+    }
 }

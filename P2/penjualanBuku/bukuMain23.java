@@ -14,16 +14,17 @@ public class bukuMain23 {
 
         System.out.println("=============================================");
 
-        bukuu23 bk2 = new bukuu23();
+        // bukuu23 bk2 = new bukuu23();
 
-        bk2.judul = "How To train Your Dragon";
-        bk2.pengarang = "Cressida Cowwel";
-        bk2.halaman = 432;
-        bk2.stok = 0;
-        bk2.harga = 275000;
-        bk2.tampilInformasi();
-        bk2.terjual(4);
-        System.out.println("Setelah pengurangan stock");
+        // bk2.judul = "How To train Your Dragon";
+        // bk2.pengarang = "Cressida Cowwel";
+        // bk2.halaman = 432;
+        // bk2.stok = 0;
+        // bk2.harga = 275000;
+        // bk2.tampilInformasi();
+        // System.out.println("Setelah pengurangan stock");
+        bukuu23 bk2 = new bukuu23("Self Reward","maheera ayesha",160,29,59000);
+        bk2.terjual(11);
         bk2.tampilInformasi();
 
     
