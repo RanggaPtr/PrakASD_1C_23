@@ -9,7 +9,7 @@ public class ArrayObjects23 {
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                ppArray[i][j] = new PersegiPanjang23();
+                ppArray[i][j] = new PersegiPanjang23(i,i);
                 System.out.println("Persegi panjang ke-" + i + ", " + j);
                 System.out.print("MaAsukkan panjang: ");
                 ppArray[i][j].panjang = sc23.nextInt();
