@@ -20,10 +20,11 @@ public class main {
         System.out.println("segitiga ke-4 memliki luas: " + sgArray23[3].hitungluas() + " dan memilki keliling: "
                 + sgArray23[3].hitungKeliling());
 
-        System.out.println("=================================================================");
+        System.out.println("========MEMAKAI LOOPING=========");
 
         for (int i = 0; i < sgArray23.length; i++) {
-            System.out.println("segitiga");
+            System.out
+                    .println("segitiga ke-" + i + "Memiliki Luas: " + sgArray23[i].hitungluas() + " dan memiliki keliling: "+sgArray23[i].hitungKeliling());
         }
     }
 }
