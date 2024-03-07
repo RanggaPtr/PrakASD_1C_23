@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "mainMahasiswa23",
+            "request": "launch",
+            "mainClass": "P3.latihan1.mainMahasiswa23",
+            "projectName": "PROGRAM_8f7ca7e8"
+        },
+        {
+            "type": "java",
             "name": "bangunMain23",
             "request": "launch",
             "mainClass": "P3.AOBPersegiPanjang.bangunMain23",
