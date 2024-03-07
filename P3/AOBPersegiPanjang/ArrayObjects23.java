@@ -5,21 +5,24 @@ import java.util.Scanner;
 public class ArrayObjects23 {
     public static void main(String[] args) {
         Scanner sc23 = new Scanner(System.in);
-        PersegiPanjang23[] ppArray = new PersegiPanjang23[3];
+        PersegiPanjang23[][] ppArray = new PersegiPanjang23[3][3];
 
         for (int i = 0; i < 3; i++) {
-            ppArray[i] = new PersegiPanjang23();
-            System.out.println("Persegi panjang ke-" + i);
-            System.out.print("Masukkan panjang: ");
-            ppArray[i].panjang = sc23.nextInt();
-            System.out.print("Masukkan lebar: ");
-            ppArray[i].lebar = sc23.nextInt();
+            for (int j = 0; j < 3; j++) {
+                ppArray[i][j] = new PersegiPanjang23();
+                System.out.println("Persegi panjang ke-" + i + ", " + j);
+                System.out.print("MaAsukkan panjang: ");
+                ppArray[i][j].panjang = sc23.nextInt();
+                System.out.print("Masukkan lebar: ");
+                ppArray[i][j].lebar = sc23.nextInt();
+            }
         }
 
         for (int i = 0; i < 3; i++) {
-            System.out.println("Persegi panjang ke-" + i);
-            System.out.println("Panjang " + ppArray[i].panjang + ", lebar: " + ppArray[i].lebar);
-            ;
+            for (int j = 0; j < 3; j++) {
+                System.out.println("Persegi panjang ke-" + i + ", " + j);
+                System.out.println("Panjang " + ppArray[i][j].panjang + ", lebar: " + ppArray[i][j].lebar);
+            }
         }
 
         // ppArray[0] = new PersegiPanjang23();
