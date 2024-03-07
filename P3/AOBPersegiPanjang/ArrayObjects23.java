@@ -25,6 +25,8 @@ public class ArrayObjects23 {
             }
         }
 
+        
+
         // ppArray[0] = new PersegiPanjang23();
         // ppArray[0].panjang = 110;
         // ppArray[0].lebar = 30;
