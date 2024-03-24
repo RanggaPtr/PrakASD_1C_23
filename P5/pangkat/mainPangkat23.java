@@ -25,25 +25,31 @@ public class mainPangkat23 {
 
         System.out.println();
 
-        System.out.println("====================================================================");
-        System.out.println("HASIL PANGKAT - BRUTE FORCE");
-        for (int i = 0; i < elemen; i++) {
-            System.out.println(
-                    "Hasil dari " + png23[i].nilai + " Pangkat " + png23[i].pangkat + " Adalah : "
-                            + png23[i].pangkatBF(png23[i].nilai, png23[i].pangkat));
+        System.out.println("Pilih metode perhitungan pangkat:");
+        System.out.println("1. Brute Force");
+        System.out.println("2. Divide & Conquer");
+        System.out.print("Pilihan Anda (1/2): ");
+        int metode = sc23.nextInt();
+
+        switch (metode) {
+            case 1:
+                System.out.println("HASIL PANGKAT - BRUTE FORCE");
+                for (int i = 0; i < elemen; i++) {
+                    System.out.println(
+                            "Hasil dari " + png23[i].nilai + " Pangkat " + png23[i].pangkat + " Adalah : "
+                                    + png23[i].pangkatBF(png23[i].nilai, png23[i].pangkat));
+                }
+                break;
+            case 2:
+                System.out.println("HASIL PANGKAT - DIVIDE & CONQUER");
+                for (int i = 0; i < elemen; i++) {
+                    System.out.println(
+                            "Hasil dari " + png23[i].nilai + " Pangkat " + png23[i].pangkat + " Adalah : "
+                                    + png23[i].pangkatDC(png23[i].nilai, png23[i].pangkat));
+                }
+                break;
+            default:
+                System.out.println("Pilihan tidak valid.");
         }
-        System.out.println("====================================================================");
-
-        System.out.println();
-
-        System.out.println("====================================================================");
-        System.out.println("HASIL PANGKAT - DIVIDE & CONQUER");
-        for (int i = 0; i < elemen; i++) {
-            System.out.println(
-                    "Hasil dari " + png23[i].nilai + " Pangkat " + png23[i].pangkat + " Adalah : "
-                            + png23[i].pangkatDC(png23[i].nilai, png23[i].pangkat));
-        }
-        System.out.println("====================================================================");
-
     }
 }
