@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MainFaktorial23",
+            "request": "launch",
+            "mainClass": "P5.faktorial.MainFaktorial23",
+            "projectName": "PrakASD_1C_23_503ca10e"
+        },
+        {
+            "type": "java",
             "name": "mainMhsswfix",
             "request": "launch",
             "mainClass": "P3.latihan1.mainMhsswfix",
