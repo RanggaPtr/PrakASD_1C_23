@@ -15,12 +15,11 @@ public class mainPangkat23 {
         System.out.println("====================================================================");
         pangkat23[] png23 = new pangkat23[elemen];
         for (int i = 0; i < elemen; i++) {
-            png23[i] = new pangkat23();
             System.out.print("Masukkan nilai yang akan dipangkatkan : ");
-            png23[i].nilai = sc23.nextInt();
+            int nilai = sc23.nextInt();
             System.out.print("Masukkan nilai pemangkat : ");
-            png23[i].pangkat = sc23.nextInt();
-
+            int pangkat = sc23.nextInt();
+            png23[i] = new pangkat23(nilai, pangkat);
         }
         System.out.println("====================================================================");
 
@@ -38,7 +37,7 @@ public class mainPangkat23 {
         System.out.println();
 
         System.out.println("====================================================================");
-        System.out.println("HASIL PANGKAT - DIVIDE & QONQUER");
+        System.out.println("HASIL PANGKAT - DIVIDE & CONQUER");
         for (int i = 0; i < elemen; i++) {
             System.out.println(
                     "Hasil dari " + png23[i].nilai + " Pangkat " + png23[i].pangkat + " Adalah : "
