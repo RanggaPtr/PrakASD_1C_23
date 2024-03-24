@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "mainPangkat23",
+            "request": "launch",
+            "mainClass": "P5.pangkat.mainPangkat23",
+            "projectName": "PrakASD_1C_23_503ca10e"
+        },
+        {
+            "type": "java",
             "name": "MainFaktorial23",
             "request": "launch",
             "mainClass": "P5.faktorial.MainFaktorial23",
