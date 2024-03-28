@@ -1,5 +1,7 @@
 package P6.bubbleSort;
 
+import P5.faktorial.faktorial23;
+
 public class daftarBuku23 {
     buku23 listBk23[] = new buku23[5];
     int idx;
@@ -52,4 +54,16 @@ public class daftarBuku23 {
         }
     }
 
+    // method insertionSort
+    void insertionSort() {
+        for (int i = 0; i < listBk23.length; i++) {
+            buku23 temp = listBk23[i];
+            int j = i;
+            while (j > 0 && listBk23[j - 1].stock > temp.stock) {
+                listBk23[j] = listBk23[j - 1];
+                j--;
+            }
+            listBk23[j] = temp;
+        }
+    }
 }
