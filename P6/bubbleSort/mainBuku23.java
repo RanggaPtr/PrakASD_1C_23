@@ -30,8 +30,13 @@ public class mainBuku23 {
         listBuku23.selectionSort();
         listBuku23.tampil();
 
+        // System.out.println("====================================");
+        // System.out.println("Data Sesudah Diurutkan Secara Ascending (Insertion Sort)");
+        // listBuku23.insertionSort();
+        // listBuku23.tampil();
+
         System.out.println("====================================");
-        System.out.println("Data Sesudah Diurutkan Secara Ascending (Insertion Sort)");
+        System.out.println("Data Sesudah Diurutkan Secara Descending (Insertion Sort)");
         listBuku23.insertionSort();
         listBuku23.tampil();
     }
