@@ -19,11 +19,15 @@ public class mainBuku23 {
         System.out.println("====================================");
         System.out.println("Data Sebelum Diurutkan ");
         listBuku23.tampil();
-        
-    
+
         System.out.println("====================================");
-        System.out.println("Data Sesudah Diurutkan Secara Ascending ");
+        System.out.println("Data Sesudah Diurutkan Secara Ascending (Bubble Sort)");
         listBuku23.bubbleSort();
+        listBuku23.tampil();
+
+        System.out.println("====================================");
+        System.out.println("Data Sesudah Diurutkan Secara Descending (Selection Sort)");
+        listBuku23.selectionSort();
         listBuku23.tampil();
     }
 

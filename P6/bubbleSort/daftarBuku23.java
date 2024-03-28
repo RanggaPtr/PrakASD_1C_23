@@ -29,9 +29,26 @@ public class daftarBuku23 {
                     buku23 tempBuku23 = listBk23[j];
                     listBk23[j] = listBk23[j + 1];
                     listBk23[j + 1] = tempBuku23;
-                    
+
                 }
             }
+        }
+    }
+
+    // method selection sort
+    void selectionSort() {
+        for (int i = 0; i < listBk23.length - 1; i++) {
+            int idMax = i;
+            for (int j = i + 1; j < listBk23.length; j++) {
+                if (listBk23[j].stock > listBk23[idMax].stock) {
+                    idMax = j;
+                }
+            }
+
+            // swap
+            buku23 tempBuku23 = listBk23[idMax];
+            listBk23[idMax] = listBk23[i];
+            listBk23[i] = tempBuku23;
         }
     }
 
