@@ -56,15 +56,15 @@ public class daftarBuku23 {
 
     // // method insertionSort Ascending
     // void insertionSort() {
-    //     for (int i = 0; i < listBk23.length; i++) {
-    //         buku23 temp = listBk23[i];
-    //         int j = i;
-    //         while (j > 0 && listBk23[j - 1].stock > temp.stock) {
-    //             listBk23[j] = listBk23[j - 1];
-    //             j--;
-    //         }
-    //         listBk23[j] = temp;
-    //     }
+    // for (int i = 0; i < listBk23.length; i++) {
+    // buku23 temp = listBk23[i];
+    // int j = i;
+    // while (j > 0 && listBk23[j - 1].stock > temp.stock) {
+    // listBk23[j] = listBk23[j - 1];
+    // j--;
+    // }
+    // listBk23[j] = temp;
+    // }
     // }
 
     // method insertionSort Descenidng
