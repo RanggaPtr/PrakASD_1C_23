@@ -43,10 +43,16 @@ public class bukuMain23 {
         int posisi = data.findSeqSearch(cari);
         data.tampilPosisi(cari, posisi);
         System.out.println("=======================================================================");
-
+        
         // menampilkan data yang ada
         data.tampilData(cari, posisi);
-
+        
+        // menggunakan tipe object
+        
+        System.out.println("=======================================================================");
+        buku23 dataBuku23 = data.findBuku23(cari);
+        dataBuku23.tampilDataBuku();
+        System.out.println("=======================================================================");
     }
 
 }

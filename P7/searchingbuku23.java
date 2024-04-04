@@ -55,4 +55,15 @@ public class searchingbuku23 {
         }
     }
 
+    // findbuku
+    public buku23 findBuku23(int cari) {
+        buku23 result = new buku23(cari, "tidak ditemukan", cari, "tidak ditemukan", cari);
+        for (int i = 0; i < listBk23.length; i++) {
+            if (listBk23[i].kodeBuku == cari) {
+                result = listBk23[i];
+                break;
+            }
+        }
+        return result;
+    }
 }

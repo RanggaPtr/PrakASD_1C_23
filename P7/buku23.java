@@ -6,6 +6,7 @@ public class buku23 {
     int tahunTerbit;
     String pengarang;
     int stock;
+    int posisi;
 
     public buku23(int kodeBuku, String judulBuku, int tahunTerbit, String pengarang, int stock) {
         this.kodeBuku = kodeBuku;
