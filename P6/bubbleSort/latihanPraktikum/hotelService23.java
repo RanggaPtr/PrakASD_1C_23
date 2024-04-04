@@ -1,6 +1,5 @@
 package P6.bubbleSort.latihanPraktikum;
 
-
 public class hotelService23 {
     hotel23 rooms23[] = new hotel23[5];
     int index;
@@ -52,7 +51,6 @@ public class hotelService23 {
             rooms23[i] = tempHotel23;
         }
     }
-
 
     // rating
     // bubble sort descending

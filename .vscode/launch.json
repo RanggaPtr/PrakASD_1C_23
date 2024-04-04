@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "bukuMain23",
+            "request": "launch",
+            "mainClass": "P7.bukuMain23",
+            "projectName": "PrakASD_1C_23_503ca10e"
+        },
+        {
+            "type": "java",
+            "name": "r",
+            "request": "launch",
+            "mainClass": "P6.bubbleSort.latihanPraktikum.r",
+            "projectName": "PrakASD_1C_23_503ca10e"
+        },
+        {
+            "type": "java",
             "name": "mainHotel233",
             "request": "launch",
             "mainClass": "P6.bubbleSort.latihanPraktikum.mainHotel233",
