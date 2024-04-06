@@ -52,7 +52,12 @@ public class bukuMain23 {
         System.out.println("=======================================================================");
         buku23 dataBuku23 = data.findBuku23(cari);
         dataBuku23.tampilDataBuku();
+        
         System.out.println("=======================================================================");
+        System.out.println("Menggunakan Binary Search : ");
+        posisi = data.findBinarySearch(cari, 0, jumBuku - 1);
+        data.tampilPosisi(cari, posisi);
+        data.tampilData(cari, posisi);
     }
 
 }

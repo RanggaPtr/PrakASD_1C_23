@@ -4,6 +4,13 @@
             "type": "java",
             "name": "bukuMain23",
             "request": "launch",
+            "mainClass": "bukuMain23",
+            "projectName": "PrakASD_1C_23_503ca10e"
+        },
+        {
+            "type": "java",
+            "name": "bukuMain23",
+            "request": "launch",
             "mainClass": "P7.bukuMain23",
             "projectName": "PrakASD_1C_23_503ca10e"
         },
