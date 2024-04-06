@@ -2,7 +2,7 @@
 
     public class searchingbuku23 {
         buku23 listBk23[] = new buku23[5];
-        int idx;
+        public int idx;
 
         // method tambah
         void tambah(buku23 m) {
