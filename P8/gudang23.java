@@ -44,6 +44,7 @@ public class gudang23 {
             barang23 delete = tumpukan[top];
             top--;
             System.out.println("Barang " + delete.nama + " Diambil dari gudang");
+            System.out.println("Kode Unik dalam biner: "+konversiDesimalKeBiner(delete.kode));
             return delete;
         } else {
             System.out.println("Tidak ada tumpukan barang (kosong)");
@@ -67,11 +68,27 @@ public class gudang23 {
     public void tampilkanBarang() {
         if (!cekKosong()) {
             System.out.println("Rincian Barang Di-Gudang");
-            for (int i = top; i >=0; i--) {
-                System.out.printf("Kode %d: %s (Kategori%s)\n",tumpukan[i].kode,tumpukan[i].nama,tumpukan[i].kategori);
+            for (int i = top; i >= 0; i--) {
+                System.out.printf("Kode %d: %s (Kategori%s)\n", tumpukan[i].kode, tumpukan[i].nama,
+                        tumpukan[i].kategori);
             }
         } else {
             System.out.println("Tidak ada tumpukan barang (kosong)");
         }
+    }
+    
+    // konversi desimal ke biner
+    public String konversiDesimalKeBiner(int kode) {
+        stackKonversi23 stack = new stackKonversi23();
+        while (kode != 0) {
+            int sisa = kode % 2;
+            stack.push(sisa);
+            kode = kode / 2;
+        }
+        String biner = new String();
+        while (!stack.isEmpty()) {
+            biner += stack.pop();
+        }
+        return biner;
     }
 }
