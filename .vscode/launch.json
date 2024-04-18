@@ -2,6 +2,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "main23",
+            "request": "launch",
+            "mainClass": "P8.main23",
+            "projectName": "PrakASD_1C_23_503ca10e"
+        },
+        {
+            "type": "java",
+            "name": "bukuMain23",
+            "request": "launch",
+            "mainClass": "P7.latihanPraktikum1.bukuMain23",
+            "projectName": "PrakASD_1C_23_503ca10e"
+        },
+        {
+            "type": "java",
+            "name": "bukuMain23",
+            "request": "launch",
+            "mainClass": "P7.latihanPraktikum2.bukuMain23",
+            "projectName": "PrakASD_1C_23_503ca10e"
+        },
+        {
+            "type": "java",
+            "name": "bukuMain23",
+            "request": "launch",
+            "mainClass": "P7.latihanPraktikum.bukuMain23",
+            "projectName": "PrakASD_1C_23_503ca10e"
+        },
+        {
+            "type": "java",
+            "name": "mergeSortMain",
+            "request": "launch",
+            "mainClass": "P7.latihanPraktikum.mergeSortMain",
+            "projectName": "PrakASD_1C_23_503ca10e"
+        },
+        {
+            "type": "java",
             "name": "mergeSortMain",
             "request": "launch",
             "mainClass": "P7.mergeSortingTest.mergeSortMain",
