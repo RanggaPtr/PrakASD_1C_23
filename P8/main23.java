@@ -2,8 +2,10 @@ package P8;
 import java.util.Scanner;
 public class main23 {
     public static void main(String[] args) {
-        gudang23 gudang = new gudang23(7);
         Scanner s = new Scanner(System.in);
+        System.out.print("Masukkan Kapasitas Gudang :");
+        int kap = s.nextInt();
+        gudang23 gudang = new gudang23(kap);
 
         boolean kondisi = true;
         while (kondisi) {
@@ -11,7 +13,8 @@ public class main23 {
             System.out.println("1. Tambah Barang");
             System.out.println("2. Ambil Barang");
             System.out.println("3. Tampilkan Tumpukan Barang");
-            System.out.println("4. Keluar");
+            System.out.println("4. Tampilkan Barang Teratas");
+            System.out.println("5. Exit");
             System.out.print("Pilih Operasi :");
             int pilihan = s.nextInt();
             s.nextLine();
@@ -37,6 +40,9 @@ public class main23 {
                     break;
 
                 case 4:
+                    gudang.lihatBarangTeratas();
+                    break;
+                case 5:
                     System.out.println("Terimakasih telah menggunakan layanan kami");
                     kondisi=false;
                     break;
