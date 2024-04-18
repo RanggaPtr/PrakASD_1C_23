@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "postfixMain23",
+            "request": "launch",
+            "mainClass": "P8.InfixPostfix.postfixMain23",
+            "projectName": "PrakASD_1C_23_503ca10e"
+        },
+        {
+            "type": "java",
             "name": "main23",
             "request": "launch",
             "mainClass": "P8.main23",

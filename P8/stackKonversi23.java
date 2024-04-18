@@ -5,8 +5,6 @@ public class stackKonversi23 {
     int[] tumpukanBiner;
     int top;
 
-
-
     public stackKonversi23() {
         this.size = 32;
         tumpukanBiner = new int[size];
@@ -31,15 +29,14 @@ public class stackKonversi23 {
     }
 
     public int pop() {
-    if (isEmpty()) {
-        System.out.println("Stack Kosong");
-        return -1;
-    } else {
-        int data = tumpukanBiner[top];
-        top--;
-        return data;
+        if (isEmpty()) {
+            System.out.println("Stack Kosong");
+            return -1;
+        } else {
+            int data = tumpukanBiner[top];
+            top--;
+            return data;
+        }
     }
-}
-    
-    
+
 }
