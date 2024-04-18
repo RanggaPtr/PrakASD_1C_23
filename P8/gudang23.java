@@ -44,7 +44,7 @@ public class gudang23 {
             barang23 delete = tumpukan[top];
             top--;
             System.out.println("Barang " + delete.nama + " Diambil dari gudang");
-            System.out.println("Kode Unik dalam biner: "+konversiDesimalKeBiner(delete.kode));
+            System.out.println("Kode Unik dalam biner: " + konversiDesimalKeBiner(delete.kode));
             return delete;
         } else {
             System.out.println("Tidak ada tumpukan barang (kosong)");
@@ -76,7 +76,7 @@ public class gudang23 {
             System.out.println("Tidak ada tumpukan barang (kosong)");
         }
     }
-    
+
     // konversi desimal ke biner
     public String konversiDesimalKeBiner(int kode) {
         stackKonversi23 stack = new stackKonversi23();
@@ -91,4 +91,32 @@ public class gudang23 {
         }
         return biner;
     }
+
+    // lihat barang terbawah
+    public barang23 lihatBarangTerbawah() {
+        if (!cekKosong()) {
+            barang23 barangTerbawah = tumpukan[0];
+            System.out.println("Barang Terbawah: " + barangTerbawah.nama);
+            return barangTerbawah;
+        } else {
+            System.out.println("Tidak ada tumpukan barang! (kosong)");
+            return null;
+        }
+    }
+
+    // cariBarang
+    public void cariBarang(String namaBarang) {
+        boolean found = false;
+        for (int i = 0; i <=top; i++) {
+            if (tumpukan[i].nama.equalsIgnoreCase(namaBarang)) {
+                System.out.printf("Barang '%s' ditemukan di posisi %d\n", namaBarang, i);
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            System.out.println("Barang Tidak Ditemukan");
+        }
+    }
+
 }
