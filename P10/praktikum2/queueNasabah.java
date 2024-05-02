@@ -34,7 +34,12 @@ public class queueNasabah {
                     antri.enqueue(nb);
                     break;
                 case 2:
-                    
+                    nasabah data = antri.dequeue();
+                    if (!"".equals (data.noRek) && !"".equals (data.nama) && !"".equals (data.alamat) && data.umur != 0 && data. saldo != 0) {
+                        System.out.println("Antrian yang keluar: " + data.noRek + " " + data.nama + " " + data.alamat
+                                + " " + data.umur + " " + data.saldo);
+                    }
+                    break;
                 case 3:
                     antri.print();
                     break;
