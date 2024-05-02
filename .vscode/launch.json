@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "queueNasabah",
+            "request": "launch",
+            "mainClass": "P10.praktikum2.queueNasabah",
+            "projectName": "PrakASD_1C_23_503ca10e"
+        },
+        {
+            "type": "java",
             "name": "queueMain",
             "request": "launch",
             "mainClass": "P10.praktikum1.queueMain",
