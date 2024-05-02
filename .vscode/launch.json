@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "queueMain",
+            "request": "launch",
+            "mainClass": "P10.praktikum1.queueMain",
+            "projectName": "PrakASD_1C_23_503ca10e"
+        },
+        {
+            "type": "java",
             "name": "postfixMain23",
             "request": "launch",
             "mainClass": "P8.InfixPostfix.postfixMain23",
