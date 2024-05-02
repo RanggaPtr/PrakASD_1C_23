@@ -18,19 +18,17 @@ public class queueNasabah {
             switch (pilih) {
                 case 1:
                     System.out.print("No rekening:");
-                    String norek = sc2.nextLine();
-
+                    String norek = sc.nextLine();
+                    sc.nextLine();
                     System.out.print("Nama:");
-                    String nama = sc2.nextLine();
+                    String nama = sc.nextLine();
                     System.out.print("Alamat:");
                     String alamat = sc.nextLine();
-                    sc.nextLine();
                     System.out.print("Umur:");
-                    int umur = sc2.nextInt();
+                    int umur = sc.nextInt();
                     sc.nextLine();
                     System.out.print("Saldo:");
-                    double saldo = sc2.nextDouble();
-                    sc.nextLine();
+                    double saldo = sc.nextDouble();
                     nasabah nb = new nasabah(norek, nama, alamat, umur, saldo);
                     sc.nextLine();
                     antri.enqueue(nb);
