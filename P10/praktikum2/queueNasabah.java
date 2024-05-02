@@ -24,10 +24,13 @@ public class queueNasabah {
                     String nama = sc2.nextLine();
                     System.out.print("Alamat:");
                     String alamat = sc.nextLine();
+                    sc.nextLine();
                     System.out.print("Umur:");
                     int umur = sc2.nextInt();
+                    sc.nextLine();
                     System.out.print("Saldo:");
                     double saldo = sc2.nextDouble();
+                    sc.nextLine();
                     nasabah nb = new nasabah(norek, nama, alamat, umur, saldo);
                     sc.nextLine();
                     antri.enqueue(nb);
