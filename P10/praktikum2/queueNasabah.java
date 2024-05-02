@@ -5,6 +5,7 @@ import java.util.*;
 public class queueNasabah {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        Scanner sc2 = new Scanner(System.in);
 
         System.out.println("Masukkan kapasitas queue:");
         int n = sc.nextInt();
@@ -17,17 +18,19 @@ public class queueNasabah {
             switch (pilih) {
                 case 1:
                     System.out.print("No rekening:");
-                    String norek = sc.nextLine();
+                    String norek = sc2.nextLine();
+
                     System.out.print("Nama:");
-                    String nama = sc.nextLine();
+                    String nama = sc2.nextLine();
                     System.out.print("Alamat:");
                     String alamat = sc.nextLine();
                     System.out.print("Umur:");
-                    int umur = sc.nextInt();
+                    int umur = sc2.nextInt();
                     System.out.print("Saldo:");
-                    double saldo = sc.nextDouble();
-
-
+                    double saldo = sc2.nextDouble();
+                    nasabah nb = new nasabah(norek, nama, alamat, umur, saldo);
+                    sc.nextLine();
+                    antri.enqueue(nb);
                     break;
                 case 2:
                     
