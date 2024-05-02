@@ -38,6 +38,13 @@ public class queue {
             System.out.println("Queue masih kosong");
         }
     }
+    public void peekRear() {
+        if (!isEmpty()) {
+            System.out.println("Element terbelakang :" + data[rear].noRek+" "+data[rear].nama+" "+data[rear].alamat+" "+data[rear].umur+" "+data[rear].saldo);
+        } else {
+            System.out.println("Queue masih kosong");
+        }
+    }
 
     public void print() {
         if (isEmpty()) {
@@ -111,6 +118,7 @@ public class queue {
         System.out.println("3. cek semua antrian");
         System.out.println("4. cek antrian terdepan");
         System.out.println("5. Clear");
+        System.out.println("6. Peek Rear");
         System.out.println("=====================");
     }
 }

@@ -49,7 +49,10 @@ public class queueNasabah {
                 case 5:
                     antri.clear();
                     break;
+                case 6:
+                    antri.peekRear();
+                    break;
             }
-        } while (pilih == 1 || pilih == 2 || pilih == 3 || pilih == 4 || pilih == 5);
+        } while (pilih == 1 || pilih == 2 || pilih == 3 || pilih == 4 || pilih == 5||pilih==6);
     }
 }
