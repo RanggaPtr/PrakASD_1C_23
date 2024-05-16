@@ -5,11 +5,11 @@ public class main {
         singleLinkedList singLL = new singleLinkedList();
         singLL.print();
 
-        dataMahasiswa mhs1 = new dataMahasiswa("Rangga", 123);
-        dataMahasiswa mhs2 = new dataMahasiswa("Putra", 456);
-        dataMahasiswa mhs3 = new dataMahasiswa("Syananda", 789);
-        dataMahasiswa mhs4 = new dataMahasiswa("Budhi", 101);
-        dataMahasiswa mhs5 = new dataMahasiswa("Setiawan", 102);
+        dataMahasiswa mhs1 = new dataMahasiswa("anton", 123);
+        dataMahasiswa mhs2 = new dataMahasiswa("prita", 456);
+        dataMahasiswa mhs3 = new dataMahasiswa("yusuf", 789);
+        dataMahasiswa mhs4 = new dataMahasiswa("doni", 101);
+        dataMahasiswa mhs5 = new dataMahasiswa("sari", 102);
 
         singLL.addFirst(mhs1);
         singLL.print();

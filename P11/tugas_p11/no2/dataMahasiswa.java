@@ -1,4 +1,4 @@
-package P11.tugas_p11.no1;
+package P11.tugas_p11.no2;
 
 public class dataMahasiswa {
     String nama;
@@ -8,13 +8,4 @@ public class dataMahasiswa {
         this.nama = nama;
         this.nim = nim;
     }
-
-    public dataMahasiswa() {
-
-    }
-
-    // shortcut
-    // public String toString() {
-    // return nama + " (" + nim + ")";
-    // }
 }
