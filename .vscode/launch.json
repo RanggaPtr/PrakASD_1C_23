@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "P11.tugas_p11.no1.main",
+            "projectName": "PrakASD_1C_23_503ca10e"
+        },
+        {
+            "type": "java",
             "name": "SLLMAIN",
             "request": "launch",
             "mainClass": "P11.singleLinkedList.SLLMAIN",
