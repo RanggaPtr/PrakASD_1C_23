@@ -4,6 +4,13 @@
             "type": "java",
             "name": "main",
             "request": "launch",
+            "mainClass": "P12.tugas_no2.main",
+            "projectName": "PrakASD_1C_23_503ca10e"
+        },
+        {
+            "type": "java",
+            "name": "main",
+            "request": "launch",
             "mainClass": "P12.tugas_no1.main",
             "projectName": "PrakASD_1C_23_503ca10e"
         },
