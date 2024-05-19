@@ -4,6 +4,13 @@
             "type": "java",
             "name": "main",
             "request": "launch",
+            "mainClass": "P12.praktikum2.main",
+            "projectName": "PrakASD_1C_23_503ca10e"
+        },
+        {
+            "type": "java",
+            "name": "main",
+            "request": "launch",
             "mainClass": "P12.main",
             "projectName": "PrakASD_1C_23_503ca10e"
         },
