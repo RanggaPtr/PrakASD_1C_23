@@ -3,7 +3,7 @@ package P14;
 public class BinaryTreeMain23 {
     public static void main(String[] args) {
         BinaryTree23 bt = new BinaryTree23();
-    
+
         bt.add(6);
         bt.add(4);
         bt.add(8);
@@ -13,21 +13,21 @@ public class BinaryTreeMain23 {
         bt.add(9);
         bt.add(10);
         bt.add(15);
-        System.out.println("PreOrder Traversal :");
+        System.out.print("PreOrder Traversal :");
         bt.traversePreOrder(bt.root);
-        System.out.print("");
-        System.out.println("InOrder Traversal :");
-        System.out.print("");
+        System.out.println("");
+        System.out.print("InOrder Traversal :");
+        System.out.println("");
         bt.traverseInOrder(bt.root);
-        System.out.println("PostOrder Traversal :");
+        System.out.print("PostOrder Traversal :");
         bt.traversePostOrder(bt.root);
-        System.out.print("");
+        System.out.println("");
         System.out.println("Find Node :" + bt.find(5));
         System.out.println("Delete Node 8");
         bt.delete(8);
-        System.out.print("");
-        System.out.println("PreOrder Traversal :");
+        System.out.println("");
+        System.out.print("PreOrder Traversal :");
         bt.traversePreOrder(bt.root);
-        System.out.print("");
+        System.out.println("");
     }
 }
