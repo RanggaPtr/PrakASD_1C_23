@@ -11,7 +11,7 @@ public class BinaryTree23 {
     };
 
     public boolean isEmpty() {
-        return root ==null;
+        return root == null;
     }
 
     public void add(int data) {
@@ -20,15 +20,15 @@ public class BinaryTree23 {
         } else {
             Node23 current = root;
             while (true) {
-                if (data<current.data) {
-                    if (current.left==null) {
+                if (data < current.data) {
+                    if (current.left == null) {
                         current.left = new Node23(data);
                         break;
                     } else {
                         current = current.left;
                     }
-                }else if (data>current.data) {
-                    if (current.right==null) {
+                } else if (data > current.data) {
+                    if (current.right == null) {
                         current.right = new Node23(data);
                         break;
                     } else {
@@ -40,13 +40,13 @@ public class BinaryTree23 {
             }
         }
     }
-    
+
     public boolean find(int data) {
         Node23 current = root;
-        while (current!=null) {
-            if (current.data==data) {
+        while (current != null) {
+            if (current.data == data) {
                 return true;
-            }else if (data<current.data) {
+            } else if (data < current.data) {
                 current = current.left;
             } else {
                 current = current.right;
@@ -54,7 +54,7 @@ public class BinaryTree23 {
         }
         return false;
     }
-    
+
     public void traversePreOrder(Node23 node) {
         if (node != null) {
             System.out.println(" " + node.data);
@@ -78,7 +78,7 @@ public class BinaryTree23 {
             traverseInOrder(node.left);
         }
     }
-    
+
     Node23 getSuccessor(Node23 del) {
         Node23 successor = del.right;
         Node23 successorParent = del;
@@ -115,12 +115,12 @@ public class BinaryTree23 {
                 isLeftChild = false;
             }
 
-            if (current==null) {
+            if (current == null) {
                 System.out.println("Couldnt find data!");
                 return;
             } else {
-                if (current.left==null&&current.right==null) {
-                    if (current==root) {
+                if (current.left == null && current.right == null) {
+                    if (current == root) {
                         root = null;
                     } else {
                         if (isLeftChild) {
@@ -129,8 +129,8 @@ public class BinaryTree23 {
                             parent.right = null;
                         }
                     }
-                }else if (current.left==null) {
-                    if (current==root) {
+                } else if (current.left == null) {
+                    if (current == root) {
                         root = current.right;
                     } else {
                         if (isLeftChild) {
@@ -139,19 +139,19 @@ public class BinaryTree23 {
                             parent.right = current;
                         }
                     }
-                }else if (current.right==null) {
-                    if (current==root) {
+                } else if (current.right == null) {
+                    if (current == root) {
                         root = current.left;
                     } else {
                         if (isLeftChild) {
                             parent.left = current.left;
-                        }else{
+                        } else {
                             parent.right = current.left;
                         }
                     }
                 } else {
                     Node23 successor = getSuccessor(current);
-                    if (current==root) {
+                    if (current == root) {
                         root = successor;
                     } else {
                         if (isLeftChild) {
