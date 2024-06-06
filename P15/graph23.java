@@ -1,8 +1,9 @@
 package P15;
 
+import java.util.Scanner;
+
 public class graph23 {
     int vertex;
-    int edge;
     doubleLinkedList23 list[];
 
     public graph23(int v) {
@@ -62,4 +63,31 @@ public class graph23 {
         }
         System.out.println("");
     }
-}
+
+    public boolean isPath(int asal, int tujuan) {
+        boolean[] visited = new boolean[vertex];
+        return isPathDFS(asal, tujuan, visited);
+    }
+
+    private boolean isPathDFS(int current, int tujuan, boolean[] visited) {
+        if (current == tujuan) {
+            return true;
+        }
+
+        visited[current] = true;
+
+        for (int i = 0; i < list[current].size(); i++) {
+            int neighbor;
+            try {
+                neighbor = list[current].get(i);
+                if (!visited[neighbor]) {
+                    if (isPathDFS(neighbor, tujuan, visited)) {
+                        return true;
+                    }
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return false;
+    }}

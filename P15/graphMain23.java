@@ -13,5 +13,17 @@ public class graphMain23 {
         g.printGraph();
         g.removeEdge(1, 3);
         g.printGraph();
+
+        checkPath(g, 2, 3); // C to D
+        checkPath(g, 2, 5); // C to F
+    }
+    
+    private static void checkPath(graph23 g, int asal, int tujuan) {
+        if (g.isPath(asal, tujuan)) {
+            System.out.println("Gedung " + (char) ('A' + asal) + " dan " + (char) ('A' + tujuan) + " bertetangga");
+        } else {
+            System.out
+                    .println("Gedung " + (char) ('A' + asal) + " dan " + (char) ('A' + tujuan) + " tidak bertetangga");
+        }
     }
 }
