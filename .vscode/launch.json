@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "graphMain23",
+            "request": "launch",
+            "mainClass": "P15.graphMain23",
+            "projectName": "PrakASD_1C_23_503ca10e"
+        },
+        {
+            "type": "java",
             "name": "BinaryTreeArrayMain23",
             "request": "launch",
             "mainClass": "P14.array.BinaryTreeArrayMain23",

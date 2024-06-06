@@ -1,6 +1,8 @@
 package P8;
+
 import java.util.Scanner;
-public class main23 {   
+
+public class main23 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.print("Masukkan Kapasitas Gudang :");
@@ -54,7 +56,7 @@ public class main23 {
                     break;
                 case 7:
                     System.out.println("Terimakasih telah menggunakan layanan kami");
-                    kondisi=false;
+                    kondisi = false;
                     break;
                 default:
                     System.out.println("Pilihan tidak valid, silahkan coba lagi");

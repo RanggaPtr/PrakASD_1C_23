@@ -116,7 +116,7 @@ public class BinaryTree23 {
             }
 
             if (current == null) {
-                System.out.println("Couldnt find data!");
+                System.out.println("Couldnt find data");
                 return;
             } else {
                 if (current.left == null && current.right == null) {
