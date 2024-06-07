@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "graphMatrixMain",
+            "request": "launch",
+            "mainClass": "P15.percobaan2.graphMatrixMain",
+            "projectName": "PrakASD_1C_23_503ca10e"
+        },
+        {
+            "type": "java",
             "name": "graphMain23",
             "request": "launch",
             "mainClass": "P15.graphMain23",
