@@ -101,4 +101,12 @@ public class graph23 {
         }
         return false;
     }
+
+    public int hitungEdge() {
+        int edgeCount = 0;
+        for (int i = 0; i < vertex; i++) {
+            edgeCount += list[i].size();
+        }
+        return edgeCount;
+    }
 }

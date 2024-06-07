@@ -1,5 +1,7 @@
 package P15;
+
 import java.util.*;
+
 public class graphMain23 {
     public static void main(String[] args) throws Exception {
         // graph23 g = new graph23(6);
@@ -29,7 +31,8 @@ public class graphMain23 {
             System.out.println("4. Print Graph");
             System.out.println("5. Check Path");
             System.out.println("6. Update Distance");
-            System.out.println("7. Exit");
+            System.out.println("7. Count Edges");
+            System.out.println("8. Exit");
             System.out.print("Choose an option: ");
             choice = sc.nextInt();
 
@@ -79,19 +82,23 @@ public class graphMain23 {
                     int newDistance = sc.nextInt();
                     g.updateJarak(source, destination, newDistance);
                     break;
-
                 case 7:
+                    int edgeCount = g.hitungEdge();
+                    System.out.println("Total edges in the graph: " + edgeCount);
+                    break;
+
+                case 8:
                     System.out.println("Exiting...");
                     break;
 
                 default:
                     System.out.println("Invalid option. Please try again.");
             }
-        } while (choice != 7);
+        } while (choice != 8);
 
         sc.close();
     }
-    
+
     private static void checkPath(graph23 g, int asal, int tujuan) {
         if (g.isPath(asal, tujuan)) {
             System.out.println("Gedung " + (char) ('A' + asal) + " dan " + (char) ('A' + tujuan) + " bertetangga");
