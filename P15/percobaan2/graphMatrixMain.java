@@ -14,5 +14,21 @@ public class graphMatrixMain {
         System.out.println("Hasil setelah penghapusan edge");
         g.removeEdge(2, 1);
         g.printGraph();
+
+        // Mencetak derajat (degree) dari masing-masing simpul
+        for (int i = 0; i < 4; i++) {
+            System.out.println("Gedung " + (char) ('A' + i) + " memiliki outDegree: " + g.outDegree(i));
+            System.out.println("Gedung " + (char) ('A' + i) + " memiliki inDegree: " + g.inDegree(i));
+        }
+
+        System.out.println("Hasil setelah penghapusan edge");
+        g.removeEdge(2, 1);
+        g.printGraph();
+
+        // Mencetak kembali derajat (degree) setelah penghapusan edge
+        for (int i = 0; i < 4; i++) {
+            System.out.println("Gedung " + (char) ('A' + i) + " memiliki outDegree: " + g.outDegree(i));
+            System.out.println("Gedung " + (char) ('A' + i) + " memiliki inDegree: " + g.inDegree(i));
+        }
     }
 }
