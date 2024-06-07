@@ -16,7 +16,7 @@ public class graphMain23 {
 
         // checkPath(g, 2, 3); // C to D
         // checkPath(g, 2, 5); // C to F
-        
+
         Scanner sc = new Scanner(System.in);
         graph23 g = new graph23(6);
 
@@ -28,7 +28,8 @@ public class graphMain23 {
             System.out.println("3. Degree");
             System.out.println("4. Print Graph");
             System.out.println("5. Check Path");
-            System.out.println("6. Exit");
+            System.out.println("6. Update Distance");
+            System.out.println("7. Exit");
             System.out.print("Choose an option: ");
             choice = sc.nextInt();
 
@@ -70,13 +71,23 @@ public class graphMain23 {
                     break;
 
                 case 6:
+                    System.out.print("Enter source (0-5): ");
+                    source = sc.nextInt();
+                    System.out.print("Enter destination (0-5): ");
+                    destination = sc.nextInt();
+                    System.out.print("Enter new distance: ");
+                    int newDistance = sc.nextInt();
+                    g.updateJarak(source, destination, newDistance);
+                    break;
+
+                case 7:
                     System.out.println("Exiting...");
                     break;
 
                 default:
                     System.out.println("Invalid option. Please try again.");
             }
-        } while (choice != 6);
+        } while (choice != 7);
 
         sc.close();
     }

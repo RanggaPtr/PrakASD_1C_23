@@ -33,6 +33,17 @@ public class doubleLinkedList23 {
         return current.jarak;
     }
 
+    public void updateJarak(int index, int newJarak) throws Exception {
+        if (isEmpty() || index >= size) {
+            throw new Exception("Nilai indeks diluar batas");
+        }
+        Node23 current = head;
+        for (int i = 0; i < index; i++) {
+            current = current.next;
+        }
+        current.jarak = newJarak;
+    }
+
     public void remove(int index) throws Exception {
         if (isEmpty() || index >= size) {
             throw new Exception("Nilai indeks di luar batas");

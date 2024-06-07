@@ -45,6 +45,16 @@ public class graph23 {
         }
     }
 
+    public void updateJarak(int asal, int tujuan, int newJarak) throws Exception {
+        for (int j = 0; j < list[asal].size(); j++) {
+            if (list[asal].get(j) == tujuan) {
+                list[asal].updateJarak(j, newJarak);
+                return;
+            }
+        }
+        throw new Exception("Edge not found");
+    }
+
     public void removeAllEdges() throws Exception {
         for (int i = 0; i < vertex; i++) {
             list[i].clear();
